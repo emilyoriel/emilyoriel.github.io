@@ -5,6 +5,14 @@
     <meta charset="utf-8">
     <style>
       /*global styles */
+     html, body {
+       margin: 0;
+       padding: 0;
+     }
+     h1 {
+       font-size: 20vw;
+       margin-top: 0;
+     }
      a {
   color:#a360bf;
 }
@@ -12,11 +20,16 @@ h2 {
   font-size: 30px;
 }
 
+/*hero styles */
+.full-hero {
+  background-color: #c7dbfc;
+  height: 50vh;
+  width: 50vw;
+}
+
 div.bio-box { 
   border: 10px solid;
-  margin-bottom: 10px;
-  /* #1e991a; */
-  rgba(17, 44, 16, 0.8)
+  color: rgba(17, 44, 16, 0.8);
 }
 /*social styles */
 .social-link {
@@ -24,17 +37,32 @@ div.bio-box {
 }
 
 /*bio styles*/ 
+.bio-wrapper {
+  font-size: 24px;
+}
+.bio-copy h3 {
+  font-size: 1.5em;
+}
 .bio-box {
-  border: solid #000 ;
-  width: 200px;
+  font-size: 1rem;
+  width: 50%;
+  margin: 10%;
+  padding: 20px;
+
 }
 .bio-copy a {
-  color:rgba(17, 44, 16, 0.8);
+  color:rgba(17, 44, 16, 0.6);
+}
+.bio-copy {
+  font-size: 1em;
 }
 
     </style>
   </head>
   <body>
+
+    <div class="full-hero hero-home">
+
     <h1 class="social-link">I'm an h1</h1>
     <ul class= "social-link">
       <li>
@@ -47,8 +75,12 @@ div.bio-box {
         <a href="https://example.com/">Link</a>
       </li>
     </ul>
+  </div>
+
     <h2>I'm an h2</h2>
-    <div class="bio-box">
+    <div class="bio-wrapper">
+    <h1>
+      <div class="bio-box">
       <h3>Michael Hartl</h3>
       <a href="https://twitter.com/mhartl"class="social-link">here</a>
       <div class="bio-copy">
@@ -65,8 +97,9 @@ div.bio-box {
         Manifesto</em></a>, but rumors that he's secretly a supervillain
         are slightly exaggerated.
       </p>
-      </div>
-    </div>
+    </div> 
+    </div> 
+  </h1>
     <div class="bio-box">
       <h3>Lee Donahoe</h3>
       <a href="https://twitter.com/leedonahoe"class="social-link">here</a>
@@ -78,7 +111,7 @@ div.bio-box {
         interface-related Learn Enough tutorials.
       </p>
     </div>
-  </div>
+    </div>
     <div class="bio-box">
       <h3>Nick Merwin</h3>
       <a href="https://twitter.com/nickmerwin"class="social-link">here</a>
@@ -97,5 +130,6 @@ div.bio-box {
         The Future
       </p>
     </div>
+</div>
   </body>
 </html>
